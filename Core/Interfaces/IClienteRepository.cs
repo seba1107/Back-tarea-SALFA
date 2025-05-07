@@ -1,4 +1,5 @@
 namespace Core.Interfaces;
+using Core.Entities;
 
 public interface IClienteRepository
 {

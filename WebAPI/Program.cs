@@ -1,7 +1,12 @@
+using Application.Services;
+using Core.Interfaces;
 using Infrastructure.Data;
+using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllers();
 
 // Configurar DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
